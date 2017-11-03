@@ -10,38 +10,38 @@ The Reddit Automatic Text Submission Replier bot is a reddit bot that automatica
 
 This bot runs on Python 2.7. Before installing Python 2.7, install the required packages:
 
-> sudo apt-get update
+	$ sudo apt-get update
 
-> sudo apt-get install build-essential checkinstall
+	$ sudo apt-get install build-essential checkinstall
 
-> sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+	$ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
 
 Download the most recent version of Python 2.7, replacing XXX with the most recent version of Python 2.7
 (most recent version of Python 2.7 is 14 as of Nov 3 2017):
 
-> cd /usr/src
+	$ cd /usr/src
 
-> sudo wget https://www.python.org/ftp/python/2.7.XXX/Python-2.7.XXX.tgz
+	$ sudo wget https://www.python.org/ftp/python/2.7.XXX/Python-2.7.XXX.tgz
 
 Extract the downloaded package with:
 
-> sudo tar xzf Python-2.7.13.tgz
+	$ sudo tar xzf Python-2.7.13.tgz
 
 Compile the Python 2.7 source code on your system using altinstall (make altinstall is used to prevent replacing the default python binary file /usr/bin/python.):
 
-> cd Python-2.7.13
+	$ cd Python-2.7.13
 
-> sudo ./configure
+	$ sudo ./configure
 
-> sudo make altinstall
+	$ sudo make altinstall
 
 Check the latest version installed of Python:
 
-> python2.7 -V
+	$ python2.7 -V
 
 This bot also needs PRAW: The Python Reddit API Wrapper. Install PRAW:
 
-> pip install praw
+	$ pip install praw
 
 ---
 
